@@ -16,14 +16,14 @@ function App() {
 export default App;
 
 function TipCalculator() {
-  const [amount, setAmount] = useState(null);
+  const [amount, setAmount] = useState("");
 
   return (
     <div>
       <BillAmount amount={amount} onSetAmount={setAmount} />
       <SelectService>How did you like</SelectService>
       <SelectService>How did your friend like the service?</SelectService>
-      <Output />
+      <Output billAmount={amount} />
       <Reset />
     </div>
   );
