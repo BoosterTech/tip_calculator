@@ -20,7 +20,7 @@ function TipCalculator() {
 
   return (
     <div>
-      <BillAmount amount={amount} />
+      <BillAmount amount={amount} onSetAmount={setAmount} />
       <SelectService>How did you like</SelectService>
       <SelectService>How did your friend like the service?</SelectService>
       <Output />
