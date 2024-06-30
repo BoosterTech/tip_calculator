@@ -18,8 +18,8 @@ function TipCalculator() {
   return (
     <div>
       <BillAmount />
-      <SelectService />
-      <SelectService />
+      <SelectService>How did you like</SelectService>
+      <SelectService>How did your friend like the service?</SelectService>
       <Output />
       <Reset />
     </div>
