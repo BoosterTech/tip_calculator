@@ -6,7 +6,7 @@ const BillAmount = ({ amount, onSetBill }) => {
         type="number"
         value={amount}
         placeholder="Bill value"
-        onChange={(e) => onSetBill(e.target.value)}
+        onChange={(e) => onSetBill(Number(e.target.value))}
       ></input>
     </div>
   );
