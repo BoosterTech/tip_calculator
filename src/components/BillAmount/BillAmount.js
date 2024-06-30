@@ -1,8 +1,8 @@
-const BillAmount = () => {
+const BillAmount = ({ amount }) => {
   return (
     <div>
       <label>How much was the bill?</label>
-      <input type="text" value="0"></input>
+      <input type="number" value={amount} placeholder="Bill value"></input>
     </div>
   );
 };
