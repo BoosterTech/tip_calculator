@@ -1,4 +1,4 @@
-const BillAmount = ({ amount, onSetBill }) => {
+const BillAmount = ({ amount, onSetAmount }) => {
   return (
     <div>
       <label>How much was the bill?</label>
@@ -6,7 +6,7 @@ const BillAmount = ({ amount, onSetBill }) => {
         type="number"
         value={amount}
         placeholder="Bill value"
-        onChange={(e) => onSetBill(Number(e.target.value))}
+        onChange={(e) => onSetAmount(Number(e.target.value))}
       ></input>
     </div>
   );
