@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import BillAmount from "./components/BillAmount/BillAmount";
 import Output from "./components/Output/Output";
@@ -15,9 +16,11 @@ function App() {
 export default App;
 
 function TipCalculator() {
+  const [amount, setAmount] = useState(null);
+
   return (
     <div>
-      <BillAmount />
+      <BillAmount amount={amount} />
       <SelectService>How did you like</SelectService>
       <SelectService>How did your friend like the service?</SelectService>
       <Output />
