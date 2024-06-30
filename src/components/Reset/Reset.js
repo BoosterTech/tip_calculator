@@ -1,5 +1,7 @@
 const Reset = () => {
-  return <div></div>;
+  return <div>
+    <button>Reset</button>
+  </div>;
 };
 
 export default Reset;
