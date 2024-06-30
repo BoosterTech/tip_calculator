@@ -1,7 +1,7 @@
-const Output = () => {
+const Output = ({ billAmount }) => {
   return (
     <div>
-      <span>You pay $...($... + $... tip) </span>
+      <span>{`You pay $...($${billAmount}... + $... tip)`} </span>
     </div>
   );
 };
