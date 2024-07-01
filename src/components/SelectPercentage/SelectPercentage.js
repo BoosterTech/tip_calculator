@@ -1,8 +1,11 @@
-const SelectService = ({ children }) => {
+function SelectPercentage({ children, onSelect, percentage }) {
   return (
     <div>
       <label>{children}</label>
-      <select name="rate">
+      <select
+        value={percentage}
+        onChange={(e) => onSelect(Number(e.target.value))}
+      >
         <option value="0">Dissatisfied (0%)</option>
         <option value="5">It was okay (5%)</option>
         <option value="10">It was good (10%)</option>
@@ -10,6 +13,6 @@ const SelectService = ({ children }) => {
       </select>
     </div>
   );
-};
+}
 
-export default SelectService;
+export default SelectPercentage;
